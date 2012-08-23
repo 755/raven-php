@@ -119,7 +119,7 @@ class Raven_Client
                             $stack=false)
     {
         $data = array(
-            'message' => vsprintf($message, $params),
+            'message' => $message,
             'level' => $level,
             'sentry.interfaces.Message' => array(
                 'message' => $message,
